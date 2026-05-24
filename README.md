@@ -1,6 +1,6 @@
 # Midterm Project — Image Classification with Machine Learning Pipeline
 
-**Course:** Machine Vision (RE604)  
+**Course:** Computer Vision (RE604)  
 **Name:** Dhini Ari Minarti  
 **NIM:** 4222311022  
 
