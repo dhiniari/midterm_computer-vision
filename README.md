@@ -1,6 +1,6 @@
-# Midterm Project — Image Classification with Machine Learning Pipeline
+# Midterm Project - Image Classification with Machine Learning Pipeline
 
-**Course:** Computer Vision (RE604)  
+**Course:** Machine Vision (RE604)  
 **Name:** Dhini Ari Minarti  
 **NIM:** 4222311022  
 
@@ -19,10 +19,10 @@ Dataset CSV → Balanced Sampling → HOG Extraction → StandardScaler → SVM 
 ## Repository Structure
 
 ```
-├── midterm_emnist.ipynb          
-├── emnist-letters-train.csv      
-├── README.md                     
-└── output/                       
+├── midterm_emnist.ipynb          # Main notebook (run this)
+├── emnist-letters-train.csv      # Dataset (download from Kaggle)
+├── README.md                     # This documentation
+└── output/                       # Generated visualizations
     ├── 01_sample_images.png
     ├── 02_hog_visualization.png
     ├── 03_gridsearch_heatmap.png
@@ -161,12 +161,21 @@ Evaluation is performed using two approaches:
 
 ---
 
-## Technical Notes
+## How to Run
 
-- `RANDOM_SEED = 42` is used across all random processes to ensure **reproducibility**
-- EMNIST images must be **transposed** `(0, 2, 1)` because pixels are stored in a flipped format in the original CSV
-- **StandardScaler** is applied after HOG extraction to normalize feature distributions before feeding into SVM
-- A training accuracy of 100% is expected behavior for SVM with a high C value — always refer to CV and Test scores for true generalization performance
+1. Download the dataset from Kaggle and place emnist-letters-train.csv in the same directory as the notebook.
+2. Install the required libraries (see above).
+3. Open midterm_machine-vision.ipynb in Jupyter Notebook or JupyterLab.
+4. Run all cells: Kernel → Restart & Run All
+
+---
+
+## Key Findings
+
+- Custom HOG parameters (finer 4×4 cells, 12 orientation bins) significantly increased feature richness from 324 to 1,728 features per image, contributing to better classification performance.
+- The RBF kernel SVM with C=10 provided the best balance between margin maximization and training error tolerance.
+- The pipeline achieved ~81.5% accuracy on 26-class handwritten letter classification using purely classical computer vision methods.
+- Consistent results between cross-validation (~80%) and test set (~81.5%) confirm the model generalizes well.
 
 ---
 
