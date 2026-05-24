@@ -68,7 +68,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn scikit-image jupyter
 2. **Download the dataset** from Kaggle and place `emnist-letters-train.csv` in the same folder as the notebook
 3. **Open the notebook:**
    ```bash
-   jupyter notebook midterm_emnist.ipynb
+   midterm_computer-vision.ipynb
    ```
 4. **Update the dataset path** in Cell 1 if needed:
    ```python
