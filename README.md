@@ -19,10 +19,10 @@ Dataset CSV → Balanced Sampling → HOG Extraction → StandardScaler → SVM 
 ## Repository Structure
 
 ```
-├── midterm_emnist.ipynb          # Main notebook (run this)
-├── emnist-letters-train.csv      # Dataset (download from Kaggle)
-├── README.md                     # This documentation
-└── output/                       # Generated visualizations
+├── midterm_emnist.ipynb          
+├── emnist-letters-train.csv      
+├── README.md                     
+└── output/                       
     ├── 01_sample_images.png
     ├── 02_hog_visualization.png
     ├── 03_gridsearch_heatmap.png
