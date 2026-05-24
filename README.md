@@ -2,7 +2,7 @@
 
 **Course:** Machine Vision (RE604)  
 **Name:** Dhini Ari Minarti  
-**Student ID:** 4222311022  
+**NIM:** 4222311022  
 
 ---
 
