@@ -72,7 +72,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn scikit-image jupyter
    ```
 4. **Update the dataset path** in Cell 1 if needed:
    ```python
-   TRAIN_CSV = 'emnist-letters-train.csv'  # adjust path if necessary
+   TRAIN_CSV = 'emnist-letters-train.csv' 
    ```
 5. **Run all cells:** `Kernel → Restart & Run All`
 
