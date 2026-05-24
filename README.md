@@ -161,15 +161,6 @@ Evaluation is performed using two approaches:
 
 ---
 
-## How to Run
-
-1. Download the dataset from Kaggle and place emnist-letters-train.csv in the same directory as the notebook.
-2. Install the required libraries (see above).
-3. Open midterm_machine-vision.ipynb in Jupyter Notebook or JupyterLab.
-4. Run all cells: Kernel → Restart & Run All
-
----
-
 ## Key Findings
 
 - Custom HOG parameters (finer 4×4 cells, 12 orientation bins) significantly increased feature richness from 324 to 1,728 features per image, contributing to better classification performance.
